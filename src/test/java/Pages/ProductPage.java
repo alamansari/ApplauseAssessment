@@ -10,6 +10,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -124,7 +125,6 @@ public class ProductPage
             String productSponsored = "";
             try {
                 productSponsored = item.findElement(By.xpath("//span[@class='sponsored-label sponsored-label--medium']//font[contains(text(),'Sponsored')]")).getText();
-                System.out.println(productSponsored);
             } catch (Exception e) {
                 productSponsored = "N/A";
             }
